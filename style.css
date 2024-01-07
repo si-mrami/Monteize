@@ -1,0 +1,502 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar style  */
+.topheader {
+  background: url("./assets/div.hero-center.png");
+}
+.topheader .navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.topheader .navbar .left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.topheader .navbar .left .lego {
+  margin-left: 3rem;
+}
+.topheader .navbar .left .lego img {
+  cursor: pointer;
+}
+.topheader .navbar .left .element {
+  display: flex;
+  gap: 20px;
+  font-family: "Roboto", sans-serif;
+  margin-left: 3rem;
+}
+.topheader .navbar .left .element span {
+  font-size: 17px;
+  cursor: pointer;
+}
+.topheader .navbar .right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.topheader .navbar .right .loginbtn button {
+  border: none;
+  background-color: rgb(41, 97, 181);
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.5rem;
+}
+.topheader .navbar .right .signupbtn button {
+  padding: 0.5rem;
+  width: 9rem;
+  border-radius: 5px;
+  border: 1px solid #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.topheader .navbar .right .signupbtn button i {
+  font-size: 10px;
+}
+.topheader .header {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.topheader .header .left h1 {
+  width: 15rem;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+.topheader .header .left h1 small {
+  color: rgb(41, 97, 181);
+}
+.topheader .header .left span {
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0.5rem;
+}
+.topheader .header .left .loginbtn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 0.5rem;
+}
+.topheader .header .left .loginbtn button {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.5rem;
+  background-color: rgb(41, 97, 181);
+  color: #fff;
+  width: 8rem;
+}
+.topheader .header .right img {
+  width: 20rem;
+  height: auto;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+}
+.main .left {
+  width: 50%;
+}
+.main .left .leftCentent {
+  padding: 2rem;
+}
+.main .left .leftCentent .topElement span {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: rgb(41, 97, 181);
+}
+.main .left .leftCentent .topElement h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  padding-top: 0.3rem;
+}
+.main .left .leftCentent .topElement p {
+  font-family: "Roboto", sans-serif;
+  padding-top: 0.4rem;
+  font-size: 12px;
+}
+.main .left .leftCentent .Element {
+  padding: 1rem;
+}
+.main .left .leftCentent .Element ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.main .left .leftCentent .Element ul li {
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main .left .leftCentent .Element ul li .listTop {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  gap: 10px;
+}
+.main .left .leftCentent .Element ul li .listTop i {
+  background-color: #d9c2e3;
+  color: #5f4387;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+}
+.main .left .leftCentent .Element ul li .listTop h1 {
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+}
+.main .left .leftCentent .Element ul li p {
+  font-size: 10px;
+  padding-left: 1rem;
+}
+.main .right {
+  width: 50%;
+}
+.main .right .rightCentenet {
+  padding: 1rem;
+}
+.main .right .rightCentenet img {
+  width: 23rem;
+  padding: 1rem;
+  height: 19rem;
+  object-fit: cover;
+}
+
+.Commitments {
+  background: url("./assets/Our Commitments.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 36vh;
+  width: 100%;
+}
+
+.inner-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.inner-wrap .centent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.7rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  background-color: rgb(226, 225, 225);
+}
+.inner-wrap .centent span {
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.inner-wrap .centent button {
+  background-color: rgb(39, 77, 135);
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
+
+.section_break {
+  background: url("./assets/sectionbreak_brandsafety.svg fill.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 52vh;
+  width: 100%;
+  background-color: #aa2fe7;
+}
+.section_break .cententbreak {
+  padding: 1rem;
+}
+.section_break .cententbreak h3 {
+  padding-left: 2rem;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+.section_break .cententbreak ul {
+  padding: 1rem;
+  display: flex;
+  margin-left: 3rem;
+  flex-direction: column;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  gap: 20px;
+}
+.section_break .cententbreak ul li {
+  font-size: 10px;
+}
+
+.solution {
+  background-color: #333f7f;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+.solution .left {
+  width: 50%;
+}
+.solution .left .leftCentent h4 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1rem;
+}
+.solution .left .leftCentent .textsolution {
+  width: 20rem;
+}
+.solution .left .leftCentent .textsolution span {
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  width: 100%;
+}
+.solution .left .leftCentent ul {
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  margin-top: 1rem;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.solution .right .rightCentent img {
+  width: 25rem;
+  height: auto;
+}
+
+.revenue {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+.revenue .revenue_left {
+  margin-top: 4rem;
+  padding-left: 2rem;
+  width: 50%;
+}
+.revenue .revenue_left h2 {
+  font-family: "Roboto", sans-serif;
+}
+.revenue .revenue_left h2 span {
+  color: #333f7f;
+}
+.revenue .revenue_left .revenuetext {
+  margin-top: 1rem;
+}
+.revenue .revenue_left .revenuetext span {
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(63, 61, 61);
+}
+.revenue .revenue_right {
+  margin-top: 4rem;
+}
+
+.rowsection {
+  background-color: lightgray;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.rowsection h2 {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+.rowsection .elements {
+  display: flex;
+  gap: 20px;
+}
+.rowsection .elements img {
+  width: 8rem;
+  cursor: pointer;
+}
+
+.homProduct {
+  display: flex;
+  margin-top: 2rem;
+}
+.homProduct .homeLeft {
+  width: 75%;
+}
+.homProduct .homeLeft img {
+  width: 100%;
+}
+.homProduct .homeRight {
+  width: 25%;
+  margin-top: 2rem;
+}
+.homProduct .homeRight h2 {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.homProduct .homeRight h2 span {
+  color: #333f7f;
+}
+.homProduct .homeRight .items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  gap: 20px;
+  padding: 1rem;
+}
+.homProduct .homeRight .items .item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.homProduct .homeRight .items .item h3 {
+  font-size: 10px;
+}
+.homProduct .homeRight .items .item p {
+  font-size: 9px;
+}
+
+.help {
+  background-color: rgb(174, 221, 239);
+  padding: 2rem;
+}
+.help .helpCentent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.help .helpCentent .helpLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+}
+.help .helpCentent .helpLeft .item {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid #d4d3d3;
+  border-bottom: 2px solid #d4d3d3;
+}
+.help .helpCentent .helpLeft .item span {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+}
+.help .helpCentent .helpLeft .item .iconPlus {
+  background-color: #333f7f;
+  border-radius: 50%;
+  height: 1rem;
+  width: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.help .helpCentent .helpLeft .item .iconPlus i {
+  font-size: 9px;
+  color: #fff;
+}
+.help .helpCentent .helpLeft .item1,
+.help .helpCentent .helpLeft .item2 {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #d4d3d3;
+}
+.help .helpCentent .helpLeft .item1 span,
+.help .helpCentent .helpLeft .item2 span {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+}
+.help .helpCentent .helpLeft .item1 .iconPlus,
+.help .helpCentent .helpLeft .item2 .iconPlus {
+  background-color: #333f7f;
+  border-radius: 50%;
+  height: 1rem;
+  width: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.help .helpCentent .helpLeft .item1 .iconPlus i,
+.help .helpCentent .helpLeft .item2 .iconPlus i {
+  font-size: 9px;
+  color: #fff;
+}
+.help .helpCentent .helpRight {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 2rem;
+}
+.help .helpCentent .helpRight h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+.help .helpCentent .helpRight h3 span {
+  color: #333f7f;
+}
+.help .helpCentent .helpRight p {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  color: #808080;
+}
+.help .helpCentent .helpRight .search {
+  display: flex;
+  gap: 20px;
+}
+.help .helpCentent .helpRight .search input {
+  border-radius: 10px;
+  border: none;
+  padding: 0.2rem;
+  width: 70%;
+}
+.help .helpCentent .helpRight .search input:focus {
+  outline: none;
+}
+.help .helpCentent .helpRight .search button {
+  background-color: rgb(39, 77, 135);
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
+
+.groupsection {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
