@@ -1,20 +1,33 @@
+@import "./media_query";
+
 * {
 	margin: 0;
 	padding: 0;
+	// overflow: hidden;
 }
 
+// body {
+// }
 /* navbar style  */
 
 
 
 .topheader {
-	background: url('./assets/div.hero-center.png');
+	background: url('./assets/div.hero-center.png') 50% 50% no-repeat;
+	background-size: 100% auto;
+
+	@include phone {
+		// background: url('./assets/div.hero-center.png');
+		background: none;
+	}
 
 	.navbar {
 		display: flex;
 		justify-content: space-between;
 		padding: 1rem;
-		// background-color: rgb(241, 243, 245);
+
+		
+
 
 		.left {
 			display: flex;
@@ -22,8 +35,14 @@
 			justify-content: space-between;
 			gap: 30px;
 
+
+
 			.lego {
 				margin-left: 3rem;
+
+				@include phone {
+					margin-left: 1rem;
+				}
 
 				img {
 					cursor: pointer;
@@ -36,9 +55,21 @@
 				font-family: 'Roboto', sans-serif;
 				margin-left: 3rem;
 
+				@include phone {
+					display: flex;
+					gap: 10px;
+					margin-left: 1rem;
+					background-color: #333f7f;
+					width: 100%;
+				}
+
 				span {
 					font-size: 17px;
 					cursor: pointer;
+
+					@include phone {
+						font-size: 12px;
+					}
 				}
 			}
 		}
@@ -48,7 +79,23 @@
 			align-items: center;
 			gap: 20px;
 
+			@include phone {
+				display: flex;
+				gap: 10px;
+				justify-content: flex-end;
+				background-color: crimson;
+				margin-left: 2rem;
+			}
+
 			.loginbtn {
+
+				@include phone {
+					display: flex;
+					gap: 10px;
+					justify-content: flex-end;
+					background-color: crimson;
+					margin-left: 2rem;
+				}
 
 				button {
 					border: none;
@@ -143,24 +190,49 @@
 	display: flex;
 	justify-content: space-around;
 
+	@include sm-desktop {
+		// background-color: crimson;
+	}
+
 	.left {
 		width: 50%;
+
+		@include sm-desktop {
+			// background-color: #0ff;
+		}
 
 		.leftCentent {
 			padding: 2rem;
 
+			@include sm-desktop {
+				// background-color: #5f4387;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+			}
+
 			.topElement {
+
+
 
 				span {
 					font-family: 'Roboto', sans-serif;
 					font-size: 12px;
 					color: rgb(41, 97, 181);
+
+					@include sm-desktop {
+						font-size: 16px;
+					}
 				}
 
 				h2 {
 					font-family: 'Roboto', sans-serif;
 					font-size: 19px;
 					padding-top: 0.3rem;
+
+					@include sm-desktop {
+						font-size: 22px;
+					}
 				}
 
 				p {
@@ -175,9 +247,12 @@
 
 				ul {
 					display: flex;
-					align-items: center;
 					flex-direction: column;
 					gap: 20px;
+
+					@include sm-desktop {
+						display: flex;
+					}
 
 					li {
 						list-style: none;
@@ -227,6 +302,11 @@
 		.rightCentenet {
 			padding: 1rem;
 
+			@include sm-desktop {
+				display: flex;
+				justify-content: center;
+			}
+
 			img {
 				width: 23rem;
 				padding: 1rem;
@@ -245,6 +325,11 @@
 	background-repeat: no-repeat;
 	height: 36vh;
 	width: 100%;
+
+	@include sm-desktop {
+		height: 60vh;
+		background-size: cover;
+	}
 }
 
 //   inner-wrap style
@@ -264,10 +349,20 @@
 		border-radius: 5px;
 		background-color: rgb(226, 225, 225);
 
+		@include sm-desktop {
+			width: 60%;
+			display: flex;
+			justify-content: space-between;
+		}
+
 		span {
 			font-size: 13px;
 			font-family: 'Roboto', sans-serif;
 			font-weight: 500;
+
+			@include sm-desktop {
+				font-size: 17px;
+			}
 		}
 
 		button {
@@ -289,17 +384,30 @@
 	background: url('./assets/sectionbreak_brandsafety.svg\ fill.png');
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 52vh;
+	height: 36vh;
 	width: 100%;
 	background-color: #aa2fe7;
 
+	@include sm-desktop {
+		height: 54vh;
+		background-size: cover;
+	}
+
 	.cententbreak {
 		padding: 1rem;
+
+		@include sm-desktop {
+			padding: 2rem;
+		}
 
 		h3 {
 			padding-left: 2rem;
 			color: #fff;
 			font-family: 'Roboto', sans-serif;
+
+			@include sm-desktop {
+				font-size: 23px;
+			}
 		}
 
 		ul {
@@ -313,6 +421,10 @@
 
 			li {
 				font-size: 10px;
+
+				@include sm-desktop {
+					font-size: 15px;
+				}
 			}
 		}
 	}
@@ -325,7 +437,6 @@
 	color: #fff;
 	display: flex;
 	align-items: center;
-
 	padding: 2rem;
 
 	.left {
@@ -335,6 +446,10 @@
 			h4 {
 				font-family: 'Roboto', sans-serif;
 				margin-bottom: 1rem;
+
+				@include sm-desktop {
+					font-size: 22px;
+				}
 			}
 
 			.textsolution {
@@ -344,6 +459,10 @@
 					font-family: 'Roboto', sans-serif;
 					font-size: 11px;
 					width: 100%;
+
+					@include sm-desktop {
+						font-size: 15px;
+					}
 				}
 			}
 
@@ -355,15 +474,33 @@
 				display: flex;
 				flex-direction: column;
 				gap: 10px;
+
+				@include sm-desktop {
+					font-size: 14px;
+				}
 			}
 		}
 	}
 
 	.right {
+		width: 50%;
+
 		.rightCentent {
+
+			@include sm-desktop {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
 			img {
 				width: 25rem;
 				height: auto;
+
+				@include sm-desktop {
+					width: 27rem;
+					height: auto;
+				}
 			}
 		}
 	}
@@ -396,6 +533,10 @@
 				font-size: 13px;
 				font-family: 'Roboto', sans-serif;
 				color: rgb(63, 61, 61);
+
+				@include sm-desktop {
+					font-size: 15px;
+				}
 			}
 		}
 	}
@@ -426,6 +567,12 @@
 		display: flex;
 		gap: 20px;
 
+		@include sm-desktop {
+			display: flex;
+			justify-content: space-between;
+			gap: 40px;
+		}
+
 		img {
 			width: 8rem;
 			cursor: pointer;
@@ -445,6 +592,10 @@
 
 		img {
 			width: 100%;
+
+			@include sm-desktop {
+				height: auto;
+			}
 		}
 	}
 
@@ -457,6 +608,11 @@
 			font-family: 'Roboto', sans-serif;
 			margin-bottom: 1rem;
 			padding: 1rem;
+
+			@include sm-desktop {
+				font-size: 17px;
+
+			}
 
 			span {
 				color: #333f7f;
@@ -479,10 +635,18 @@
 
 				h3 {
 					font-size: 10px;
+
+					@include sm-desktop {
+						font-size: 15px;
+					}
 				}
 
 				p {
 					font-size: 9px;
+
+					@include sm-desktop {
+						font-size: 14px;
+					}
 				}
 			}
 		}
@@ -494,6 +658,10 @@
 .help {
 	background-color: rgb(174, 221, 239);
 	padding: 2rem;
+
+	@include sm-desktop {
+		padding: 3rem;
+	}
 
 	.helpCentent {
 		display: flex;
@@ -517,6 +685,10 @@
 				span {
 					font-family: 'Roboto', sans-serif;
 					font-size: 10px;
+
+					@include sm-desktop {
+						font-size: 13px;
+					}
 				}
 
 				.iconPlus {
@@ -546,6 +718,10 @@
 				span {
 					font-family: 'Roboto', sans-serif;
 					font-size: 10px;
+
+					@include sm-desktop {
+						font-size: 13px;
+					}
 				}
 
 				.iconPlus {
@@ -628,10 +804,7 @@
 	padding: 1rem;
 	font-family: 'Roboto', sans-serif;
 
-	.left {
+	.left {}
 
-	}
-	.right {
-
-	}
+	.right {}
 }

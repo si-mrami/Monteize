@@ -5,7 +5,13 @@
 
 /* navbar style  */
 .topheader {
-  background: url("./assets/div.hero-center.png");
+  background: url("./assets/div.hero-center.png") 50% 50% no-repeat;
+  background-size: 100% auto;
+}
+@media screen and (min-width: 280px) and (max-width: 481px) {
+  .topheader {
+    background: none;
+  }
 }
 .topheader .navbar {
   display: flex;
@@ -21,6 +27,11 @@
 .topheader .navbar .left .lego {
   margin-left: 3rem;
 }
+@media screen and (min-width: 280px) and (max-width: 481px) {
+  .topheader .navbar .left .lego {
+    margin-left: 1rem;
+  }
+}
 .topheader .navbar .left .lego img {
   cursor: pointer;
 }
@@ -30,14 +41,46 @@
   font-family: "Roboto", sans-serif;
   margin-left: 3rem;
 }
+@media screen and (min-width: 280px) and (max-width: 481px) {
+  .topheader .navbar .left .element {
+    display: flex;
+    gap: 10px;
+    margin-left: 1rem;
+    background-color: #333f7f;
+    width: 100%;
+  }
+}
 .topheader .navbar .left .element span {
   font-size: 17px;
   cursor: pointer;
+}
+@media screen and (min-width: 280px) and (max-width: 481px) {
+  .topheader .navbar .left .element span {
+    font-size: 12px;
+  }
 }
 .topheader .navbar .right {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+@media screen and (min-width: 280px) and (max-width: 481px) {
+  .topheader .navbar .right {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    background-color: crimson;
+    margin-left: 2rem;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 481px) {
+  .topheader .navbar .right .loginbtn {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    background-color: crimson;
+    margin-left: 2rem;
+  }
 }
 .topheader .navbar .right .loginbtn button {
   border: none;
@@ -114,15 +157,32 @@
 .main .left .leftCentent {
   padding: 2rem;
 }
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .main .left .leftCentent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
 .main .left .leftCentent .topElement span {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   color: rgb(41, 97, 181);
 }
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .main .left .leftCentent .topElement span {
+    font-size: 16px;
+  }
+}
 .main .left .leftCentent .topElement h2 {
   font-family: "Roboto", sans-serif;
   font-size: 19px;
   padding-top: 0.3rem;
+}
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .main .left .leftCentent .topElement h2 {
+    font-size: 22px;
+  }
 }
 .main .left .leftCentent .topElement p {
   font-family: "Roboto", sans-serif;
@@ -134,9 +194,13 @@
 }
 .main .left .leftCentent .Element ul {
   display: flex;
-  align-items: center;
   flex-direction: column;
   gap: 20px;
+}
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .main .left .leftCentent .Element ul {
+    display: flex;
+  }
 }
 .main .left .leftCentent .Element ul li {
   list-style: none;
@@ -176,6 +240,12 @@
 .main .right .rightCentenet {
   padding: 1rem;
 }
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .main .right .rightCentenet {
+    display: flex;
+    justify-content: center;
+  }
+}
 .main .right .rightCentenet img {
   width: 23rem;
   padding: 1rem;
@@ -189,6 +259,12 @@
   background-repeat: no-repeat;
   height: 36vh;
   width: 100%;
+}
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .Commitments {
+    height: 60vh;
+    background-size: cover;
+  }
 }
 
 .inner-wrap {
@@ -206,10 +282,22 @@
   border-radius: 5px;
   background-color: rgb(226, 225, 225);
 }
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .inner-wrap .centent {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .inner-wrap .centent span {
   font-size: 13px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+}
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .inner-wrap .centent span {
+    font-size: 17px;
+  }
 }
 .inner-wrap .centent button {
   background-color: rgb(39, 77, 135);
@@ -225,17 +313,33 @@
   background: url("./assets/sectionbreak_brandsafety.svg fill.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 52vh;
+  height: 36vh;
   width: 100%;
   background-color: #aa2fe7;
 }
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .section_break {
+    height: 54vh;
+    background-size: cover;
+  }
+}
 .section_break .cententbreak {
   padding: 1rem;
+}
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .section_break .cententbreak {
+    padding: 2rem;
+  }
 }
 .section_break .cententbreak h3 {
   padding-left: 2rem;
   color: #fff;
   font-family: "Roboto", sans-serif;
+}
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .section_break .cententbreak h3 {
+    font-size: 23px;
+  }
 }
 .section_break .cententbreak ul {
   padding: 1rem;
@@ -248,6 +352,11 @@
 }
 .section_break .cententbreak ul li {
   font-size: 10px;
+}
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .section_break .cententbreak ul li {
+    font-size: 15px;
+  }
 }
 
 .solution {
@@ -264,6 +373,11 @@
   font-family: "Roboto", sans-serif;
   margin-bottom: 1rem;
 }
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .solution .left .leftCentent h4 {
+    font-size: 22px;
+  }
+}
 .solution .left .leftCentent .textsolution {
   width: 20rem;
 }
@@ -271,6 +385,11 @@
   font-family: "Roboto", sans-serif;
   font-size: 11px;
   width: 100%;
+}
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .solution .left .leftCentent .textsolution span {
+    font-size: 15px;
+  }
 }
 .solution .left .leftCentent ul {
   font-family: "Roboto", sans-serif;
@@ -281,9 +400,30 @@
   flex-direction: column;
   gap: 10px;
 }
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .solution .left .leftCentent ul {
+    font-size: 14px;
+  }
+}
+.solution .right {
+  width: 50%;
+}
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .solution .right .rightCentent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .solution .right .rightCentent img {
   width: 25rem;
   height: auto;
+}
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .solution .right .rightCentent img {
+    width: 27rem;
+    height: auto;
+  }
 }
 
 .revenue {
@@ -310,6 +450,11 @@
   font-family: "Roboto", sans-serif;
   color: rgb(63, 61, 61);
 }
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .revenue .revenue_left .revenuetext span {
+    font-size: 15px;
+  }
+}
 .revenue .revenue_right {
   margin-top: 4rem;
 }
@@ -331,6 +476,13 @@
   display: flex;
   gap: 20px;
 }
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .rowsection .elements {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+}
 .rowsection .elements img {
   width: 8rem;
   cursor: pointer;
@@ -346,6 +498,11 @@
 .homProduct .homeLeft img {
   width: 100%;
 }
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .homProduct .homeLeft img {
+    height: auto;
+  }
+}
 .homProduct .homeRight {
   width: 25%;
   margin-top: 2rem;
@@ -355,6 +512,11 @@
   font-family: "Roboto", sans-serif;
   margin-bottom: 1rem;
   padding: 1rem;
+}
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .homProduct .homeRight h2 {
+    font-size: 17px;
+  }
 }
 .homProduct .homeRight h2 span {
   color: #333f7f;
@@ -376,13 +538,28 @@
 .homProduct .homeRight .items .item h3 {
   font-size: 10px;
 }
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .homProduct .homeRight .items .item h3 {
+    font-size: 15px;
+  }
+}
 .homProduct .homeRight .items .item p {
   font-size: 9px;
+}
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .homProduct .homeRight .items .item p {
+    font-size: 14px;
+  }
 }
 
 .help {
   background-color: rgb(174, 221, 239);
   padding: 2rem;
+}
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .help {
+    padding: 3rem;
+  }
 }
 .help .helpCentent {
   display: flex;
@@ -406,6 +583,11 @@
 .help .helpCentent .helpLeft .item span {
   font-family: "Roboto", sans-serif;
   font-size: 10px;
+}
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .help .helpCentent .helpLeft .item span {
+    font-size: 13px;
+  }
 }
 .help .helpCentent .helpLeft .item .iconPlus {
   background-color: #333f7f;
@@ -432,6 +614,12 @@
 .help .helpCentent .helpLeft .item2 span {
   font-family: "Roboto", sans-serif;
   font-size: 10px;
+}
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .help .helpCentent .helpLeft .item1 span,
+  .help .helpCentent .helpLeft .item2 span {
+    font-size: 13px;
+  }
 }
 .help .helpCentent .helpLeft .item1 .iconPlus,
 .help .helpCentent .helpLeft .item2 .iconPlus {
