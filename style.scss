@@ -1453,6 +1453,10 @@ body {}
 
 		.bottomSlide {
 			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 80%;
+
 
 			@include tablet {
 				display: flex;
@@ -1464,6 +1468,7 @@ body {}
 			.bottomSlideleft {
 				display: flex;
 				align-items: center;
+				justify-content: space-around;
 				gap: 10px;
 
 				@include tablet {
@@ -1511,7 +1516,9 @@ body {}
 
 			.bottomSlideright {
 				display: flex;
-				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+				gap: 20px;
 
 				@include tablet {
 					gap: 10px;
