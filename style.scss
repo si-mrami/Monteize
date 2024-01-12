@@ -3,75 +3,98 @@
 * {
 	margin: 0;
 	padding: 0;
-	// overflow: hidden;
+
+	@include tablet {
+		overflow-x: hidden;
+	}
+
+	@include sm-desktop {
+		overflow-x: hidden;
+	}
+
+	@include phone {
+		overflow-x: hidden;
+	}
 }
 
-// body {
-// }
+body {}
+
 /* navbar style  */
 
 
 
 .topheader {
 	background: url('./assets/div.hero-center.png') 50% 50% no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
 
 	@include phone {
-		// background: url('./assets/div.hero-center.png');
-		background: none;
+		background: url('./assets/div.hero-center.png') 100% 100% no-repeat;
+		background-size: 100% 100%;
+		width: 100%;
 	}
+
+
 
 	.navbar {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		padding: 1rem;
+		align-items: center;
 
-		
-
+		@include phone {
+			width: 100%;
+		}
 
 		.left {
 			display: flex;
 			align-items: center;
-			justify-content: space-between;
 			gap: 30px;
 
 
 
 			.lego {
-				margin-left: 3rem;
 
 				@include phone {
-					margin-left: 1rem;
+
+					display: flex;
+					align-items: center;
+					justify-content: center;
 				}
+
+
 
 				img {
 					cursor: pointer;
-				}
-			}
-
-			.element {
-				display: flex;
-				gap: 20px;
-				font-family: 'Roboto', sans-serif;
-				margin-left: 3rem;
-
-				@include phone {
-					display: flex;
-					gap: 10px;
-					margin-left: 1rem;
-					background-color: #333f7f;
-					width: 100%;
-				}
-
-				span {
-					font-size: 17px;
-					cursor: pointer;
 
 					@include phone {
-						font-size: 12px;
+						width: 3rem;
 					}
 				}
 			}
+
+			.centerElement {
+				display: flex;
+				gap: 40px;
+				font-family: 'Roboto', sans-serif;
+
+				@include phone {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap: 10px;
+				}
+
+				span {
+					cursor: pointer;
+					font-size: 18px;
+					font-weight: 400;
+
+					@include phone {
+						font-size: 8px;
+					}
+				}
+			}
+
 		}
 
 		.right {
@@ -81,21 +104,15 @@
 
 			@include phone {
 				display: flex;
-				gap: 10px;
-				justify-content: flex-end;
-				background-color: crimson;
-				margin-left: 2rem;
+				margin-right: 1.6rem;
+
 			}
+
+
 
 			.loginbtn {
 
-				@include phone {
-					display: flex;
-					gap: 10px;
-					justify-content: flex-end;
-					background-color: crimson;
-					margin-left: 2rem;
-				}
+
 
 				button {
 					border: none;
@@ -105,6 +122,14 @@
 					color: #fff;
 					font-weight: 700;
 					padding: 0.5rem;
+
+					@include phone {
+						font-weight: 200;
+						font-size: 7px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
 				}
 			}
 
@@ -121,8 +146,21 @@
 					cursor: pointer;
 					font-weight: bold;
 
+					@include phone {
+						width: 4rem;
+						font-weight: 200;
+						font-size: 7px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
+
 					i {
 						font-size: 10px;
+
+						@include phone {
+							font-size: 7px;
+						}
 					}
 				}
 			}
@@ -137,11 +175,46 @@
 		align-items: center;
 		justify-content: space-around;
 
+
+
+		@include phone {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column-reverse;
+			gap: 15px;
+		}
+
 		.left {
+
+			@include tablet {
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+			}
+
+			@include phone {
+				display: flex;
+				flex-direction: column;
+				gap: 5px;
+			}
+
 			h1 {
 				width: 15rem;
 				height: auto;
 				margin-bottom: 0.5rem;
+				font-size: 65px;
+				width: 100%;
+				font-weight: 600;
+				margin-bottom: 1rem;
+
+				@include tablet {
+					font-size: 30px;
+				}
+
+				@include phone {
+					font-size: 14px;
+				}
 
 				small {
 					color: rgb(41, 97, 181);
@@ -149,9 +222,14 @@
 			}
 
 			span {
-				font-size: 13px;
+				font-size: 16px;
 				font-family: 'Roboto', sans-serif;
 				margin-bottom: 0.5rem;
+				margin-bottom: 1rem;
+
+				@include phone {
+					font-size: 9px;
+				}
 			}
 
 			.loginbtn {
@@ -166,18 +244,31 @@
 					cursor: pointer;
 					color: #fff;
 					font-weight: 700;
-					padding: 0.5rem;
+					padding: 0.8rem;
 					background-color: rgb(41, 97, 181);
 					color: #fff;
-					width: 8rem;
+					width: 9rem;
+					font-size: 17px;
 				}
 			}
 		}
 
 		.right {
+
+			@include tablet {}
+
 			img {
-				width: 20rem;
-				height: auto;
+				width: 90%;
+				height: 100%;
+
+				@include tablet {
+					width: 23rem;
+					// height: 20rem;
+				}
+
+				@include phone {
+					height: 9rem;
+				}
 			}
 		}
 	}
@@ -190,22 +281,46 @@
 	display: flex;
 	justify-content: space-around;
 
-	@include sm-desktop {
-		// background-color: crimson;
+
+	@include tablet {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		// padding: 1rem;
+
+	}
+
+	@include phone {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column-reverse;
 	}
 
 	.left {
 		width: 50%;
 
-		@include sm-desktop {
-			// background-color: #0ff;
+		@include tablet {
+			width: 70%;
+		}
+
+		@include phone {
+			width: 100%;
 		}
 
 		.leftCentent {
-			padding: 2rem;
+			padding: 4rem;
+			display: flex;
+			// align-items: center;
+			justify-content: center;
+
+			@include tablet {
+				width: 80% !important;
+				display: flex;
+				flex-direction: column;
+			}
 
 			@include sm-desktop {
-				// background-color: #5f4387;
 				display: flex;
 				flex-direction: column;
 				justify-content: flex-start;
@@ -214,11 +329,14 @@
 			.topElement {
 
 
-
 				span {
 					font-family: 'Roboto', sans-serif;
-					font-size: 12px;
+					font-size: 17px;
 					color: rgb(41, 97, 181);
+
+					@include tablet {
+						font-size: 14px;
+					}
 
 					@include sm-desktop {
 						font-size: 16px;
@@ -227,8 +345,15 @@
 
 				h2 {
 					font-family: 'Roboto', sans-serif;
-					font-size: 19px;
+					font-size: 40px !important;
+					font-weight: 700;
 					padding-top: 0.3rem;
+					padding-bottom: 0.3rem;
+
+					@include tablet {
+						font-size: 20px !important;
+						font-weight: 500;
+					}
 
 					@include sm-desktop {
 						font-size: 22px;
@@ -238,7 +363,15 @@
 				p {
 					font-family: 'Roboto', sans-serif;
 					padding-top: 0.4rem;
-					font-size: 12px;
+					font-size: 19px;
+
+					@include tablet {
+						font-size: 12px;
+					}
+
+					@include phone {
+						font-weight: 300;
+					}
 				}
 			}
 
@@ -265,8 +398,10 @@
 
 							display: flex;
 							align-items: center;
-							font-size: 10px;
+							font-size: 16px;
 							gap: 10px;
+
+
 
 							i {
 								background-color: #d9c2e3;
@@ -281,14 +416,27 @@
 							}
 
 							h1 {
-								font-size: 13px;
+								font-size: 17px;
 								font-family: 'Roboto', sans-serif;
+
+								@include tablet {
+									font-size: 12px !important;
+									font-weight: 500;
+								}
 							}
 						}
 
 						p {
-							font-size: 10px;
+							font-size: 16px;
 							padding-left: 1rem;
+
+							@include tablet {
+								font-size: 11px !important;
+							}
+
+							@include phone {
+								font-weight: 300;
+							}
 						}
 					}
 				}
@@ -299,8 +447,28 @@
 	.right {
 		width: 50%;
 
+		@include tablet {
+			width: 60%;
+			height: 100%;
+		}
+
+		@include phone {
+			width: 100%;
+
+		}
+
 		.rightCentenet {
 			padding: 1rem;
+
+			@include tablet {
+				width: 100%;
+			}
+
+			@include phone {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
 
 			@include sm-desktop {
 				display: flex;
@@ -308,10 +476,15 @@
 			}
 
 			img {
-				width: 23rem;
+				width: 60%;
 				padding: 1rem;
-				height: 19rem;
+				height: 50%;
 				object-fit: cover;
+
+				@include tablet {
+					width: 90%;
+					height: 90%;
+				}
 			}
 		}
 	}
@@ -320,15 +493,32 @@
 // Our Commitments style
 
 .Commitments {
-	background: url('./assets/Our Commitments.png');
+	background: url('./assets/Our Commitments.png') 50% 50% no-repeat;
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 36vh;
-	width: 100%;
+	// width: 100%;
+
+	@include tablet {
+		background: url('./assets/Our Commitments.png') 100% 90% no-repeat;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		height: 36vh;
+	}
+
+	@include phone {
+		background: url('./assets/Our Commitments.png') 100% 50% no-repeat;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		width: 100% !important;
+	}
 
 	@include sm-desktop {
-		height: 60vh;
-		background-size: cover;
+		background: url('./assets/Our Commitments.png') 100% 90% no-repeat;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		height: 36rem;
+		width: 100%;
 	}
 }
 
@@ -355,10 +545,19 @@
 			justify-content: space-between;
 		}
 
+		@include phone {
+			width: 100%;
+		}
+
 		span {
 			font-size: 13px;
 			font-family: 'Roboto', sans-serif;
 			font-weight: 500;
+
+			@include phone {
+				font-size: 10px;
+				font-weight: 200;
+			}
 
 			@include sm-desktop {
 				font-size: 17px;
@@ -373,6 +572,12 @@
 			border-radius: 8px;
 			cursor: pointer;
 			font-family: 'Roboto', sans-serif;
+
+			@include phone {
+				font-size: 9px;
+				padding: 5px;
+				font-weight: 200;
+			}
 		}
 	}
 }
@@ -388,9 +593,29 @@
 	width: 100%;
 	background-color: #aa2fe7;
 
-	@include sm-desktop {
-		height: 54vh;
+	@include tablet {
+		height: 35vh !important;
+	}
+
+	@include phone {
+		background: url('./assets/sectionbreak_brandsafety.svg\ fill.png');
 		background-size: cover;
+		background-repeat: no-repeat;
+		height: 36vh;
+		width: 100%;
+		background-color: #aa2fe7;
+		overflow: hidden;
+		font-weight: 200;
+	}
+
+	@include sm-desktop {
+		height: 30rem;
+		overflow: hidden;
+		background-size: cover;
+	}
+
+	@include tablet {
+		height: 28vh;
 	}
 
 	.cententbreak {
@@ -404,6 +629,11 @@
 			padding-left: 2rem;
 			color: #fff;
 			font-family: 'Roboto', sans-serif;
+			font-size: 32px !important;
+
+			@include tablet {
+				font-size: 26px !important;
+			}
 
 			@include sm-desktop {
 				font-size: 23px;
@@ -420,7 +650,11 @@
 			gap: 20px;
 
 			li {
-				font-size: 10px;
+				font-size: 20px !important;
+
+				@include tablet {
+					font-size: 13px !important;
+				}
 
 				@include sm-desktop {
 					font-size: 15px;
@@ -439,13 +673,37 @@
 	align-items: center;
 	padding: 2rem;
 
+	@include tablet {
+		padding: 0.5rem;
+	}
+
+	@include phone {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+
 	.left {
 		width: 50%;
+
+		@include tablet {
+			width: 50%;
+		}
+
+		@include phone {
+			width: 100%;
+		}
 
 		.leftCentent {
 			h4 {
 				font-family: 'Roboto', sans-serif;
 				margin-bottom: 1rem;
+				font-size: 42px !important;
+
+				@include tablet {
+					font-size: 27px !important;
+				}
 
 				@include sm-desktop {
 					font-size: 22px;
@@ -455,10 +713,18 @@
 			.textsolution {
 				width: 20rem;
 
+				@include phone {
+					font-weight: 300;
+				}
+
 				span {
 					font-family: 'Roboto', sans-serif;
-					font-size: 11px;
+					font-size: 26px !important;
 					width: 100%;
+
+					@include tablet {
+						font-size: 13px !important;
+					}
 
 					@include sm-desktop {
 						font-size: 15px;
@@ -474,6 +740,17 @@
 				display: flex;
 				flex-direction: column;
 				gap: 10px;
+				list-style: inside;
+				font-size: 20px !important;
+
+				@include tablet {
+					font-size: 13px !important;
+					text-align: start;
+				}
+
+				@include phone {
+					font-weight: 200;
+				}
 
 				@include sm-desktop {
 					font-size: 14px;
@@ -485,7 +762,21 @@
 	.right {
 		width: 50%;
 
+		@include phone {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
 		.rightCentent {
+
+			@include tablet {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+			}
 
 			@include sm-desktop {
 				display: flex;
@@ -494,8 +785,16 @@
 			}
 
 			img {
-				width: 25rem;
+				width: 90% !important;
 				height: auto;
+
+				@include tablet {
+					width: 90% !important;
+				}
+
+				@include phone {
+					width: 20rem;
+				}
 
 				@include sm-desktop {
 					width: 27rem;
@@ -513,13 +812,37 @@
 	justify-content: space-around;
 	padding: 1rem;
 
+	@include phone {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	@include tablet {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
 	.revenue_left {
 		margin-top: 4rem;
 		padding-left: 2rem;
 		width: 50%;
 
+		@include phone {
+			width: 100%;
+		}
+		@include tablet {
+			width: 60%;
+		}
 		h2 {
 			font-family: 'Roboto', sans-serif;
+			font-size: 40px !important;
+
+			@include tablet {
+				font-size: 16px !important;
+			}
 
 			span {
 				color: #333f7f;
@@ -530,9 +853,13 @@
 			margin-top: 1rem;
 
 			span {
-				font-size: 13px;
+				font-size: 23px !important;
 				font-family: 'Roboto', sans-serif;
-				color: rgb(63, 61, 61);
+				color: #767575;
+
+				@include tablet {
+					font-size: 15px !important;
+				}
 
 				@include sm-desktop {
 					font-size: 15px;
@@ -543,6 +870,31 @@
 
 	.revenue_right {
 		margin-top: 4rem;
+
+		@include tablet {
+		}
+
+		@include phone {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		img {
+			width: 100% !important;
+
+			@include tablet {
+				width: 100%;
+				height: auto;
+			}
+
+			@include sm-desktop {
+				background-color: crimson;
+				width: 22rem;
+
+			}
+		}
 	}
 }
 
@@ -558,14 +910,42 @@
 	flex-direction: column;
 	gap: 20px;
 
+	@include phone {
+		// background-color: #333f7f;
+	}
+
+	@include tablet {
+		display: flex;
+		justify-content: center;
+	}
+
 	h2 {
-		font-size: 14px;
+		font-size: 20px;
 		font-family: 'Roboto', sans-serif;
+
+		@include tablet {
+			font-size: 13px !important;
+		}
+
+		@include phone {
+			font-size: 9px;
+		}
 	}
 
 	.elements {
 		display: flex;
 		gap: 20px;
+
+		@include phone {
+			display: flex;
+			gap: 5px;
+		}
+
+		@include tablet {
+			display: flex;
+			gap: 5px;
+
+		}
 
 		@include sm-desktop {
 			display: flex;
@@ -574,8 +954,20 @@
 		}
 
 		img {
-			width: 8rem;
+			width: 70% !important;
 			cursor: pointer;
+
+			@include phone {
+				width: 3rem;
+			}
+
+			@include tablet {
+				width: 5rem;
+			}
+
+			@include sm-desktop {
+				width: 5rem;
+			}
 		}
 	}
 }
@@ -587,11 +979,35 @@
 	display: flex;
 	margin-top: 2rem;
 
+	@include phone {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column-reverse;
+	}
+
 	.homeLeft {
 		width: 75%;
 
-		img {
+		@include tablet {
+			width: 75%;
+		}
+
+		@include phone {
 			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		img {
+			width: 90%;
+
+			@include tablet {
+				width: 97%;
+				height: auto;
+			}
+
 
 			@include sm-desktop {
 				height: auto;
@@ -602,12 +1018,27 @@
 	.homeRight {
 		width: 25%;
 		margin-top: 2rem;
+		margin-left: -3rem;
+
+		@include tablet {
+			width: 50%;
+		}
+
+		@include phone {
+			width: 100%;
+			margin-top: 1rem;
+		}
 
 		h2 {
-			font-size: 14px;
+			font-size: 35px !important;
 			font-family: 'Roboto', sans-serif;
 			margin-bottom: 1rem;
 			padding: 1rem;
+
+			@include tablet {
+				font-size: 20px !important;
+				margin: 0;
+			}
 
 			@include sm-desktop {
 				font-size: 17px;
@@ -634,7 +1065,11 @@
 				gap: 5px;
 
 				h3 {
-					font-size: 10px;
+					font-size: 28px !important;
+
+					@include tablet {
+						font-size: 15px !important;
+					}
 
 					@include sm-desktop {
 						font-size: 15px;
@@ -642,7 +1077,12 @@
 				}
 
 				p {
-					font-size: 9px;
+					font-size: 20px !important;
+					color: #767575;
+
+					@include tablet {
+						font-size: 12px !important;
+					}
 
 					@include sm-desktop {
 						font-size: 14px;
@@ -659,6 +1099,8 @@
 	background-color: rgb(174, 221, 239);
 	padding: 2rem;
 
+
+
 	@include sm-desktop {
 		padding: 3rem;
 	}
@@ -669,11 +1111,22 @@
 		justify-content: space-between;
 		gap: 20px;
 
+		@include phone {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
 		.helpLeft {
 			display: flex;
 			flex-direction: column;
 			gap: 10px;
 			width: 50%;
+
+			@include phone {
+				width: 100%;
+			}
 
 			.item {
 				padding: 1rem;
@@ -684,11 +1137,12 @@
 
 				span {
 					font-family: 'Roboto', sans-serif;
-					font-size: 10px;
+					font-size: 19px !important;
 
-					@include sm-desktop {
-						font-size: 13px;
+					@include tablet {
+						font-size: 13px !important;
 					}
+
 				}
 
 				.iconPlus {
@@ -700,6 +1154,8 @@
 					align-items: center;
 					justify-content: center;
 					cursor: pointer;
+
+
 
 					i {
 						font-size: 9px;
@@ -717,11 +1173,13 @@
 
 				span {
 					font-family: 'Roboto', sans-serif;
-					font-size: 10px;
+					font-size: 19px !important;
 
-					@include sm-desktop {
-						font-size: 13px;
+					@include tablet {
+						font-size: 13px !important;
 					}
+
+
 				}
 
 				.iconPlus {
@@ -733,6 +1191,8 @@
 					align-items: center;
 					justify-content: center;
 					cursor: pointer;
+
+
 
 					i {
 						font-size: 9px;
@@ -750,9 +1210,18 @@
 			gap: 10px;
 			margin-left: 2rem;
 
+			@include phone {
+				width: 100%;
+
+			}
+
 			h3 {
 				font-family: 'Roboto', sans-serif;
-				font-size: 15px;
+				font-size: 24px !important;
+
+				@include tablet {
+					font-size: 13px !important;
+				}
 
 				span {
 					color: #333f7f;
@@ -761,19 +1230,41 @@
 
 			p {
 				font-family: 'Roboto', sans-serif;
-				font-size: 13px;
+				font-size: 17px !important;
 				color: #808080;
+
+				@include tablet {
+					font-size: 13px !important;
+				}
 			}
 
 			.search {
 				display: flex;
 				gap: 20px;
 
+				@include phone {
+					display: flex;
+					align-items: center;
+					gap: 5px;
+					justify-content: center;
+					width: 100%;
+					flex-direction: column;
+				}
+
 				input {
 					border-radius: 10px;
 					border: none;
 					padding: 0.2rem;
 					width: 70%;
+
+					@include tablet {
+						width: 100%;
+					}
+
+					@include phone {
+						height: 2rem;
+						width: 85%;
+					}
 
 					&:focus {
 						outline: none;
@@ -788,6 +1279,19 @@
 					border-radius: 20px;
 					cursor: pointer;
 					font-family: 'Roboto', sans-serif;
+
+					@include phone {
+						font-size: 12px;
+						height: 2rem;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						width: 7rem;
+					}
+
+					@include tablet {
+						width: 40%;
+					}
 				}
 			}
 		}
@@ -804,7 +1308,460 @@
 	padding: 1rem;
 	font-family: 'Roboto', sans-serif;
 
-	.left {}
 
-	.right {}
+
+	@include phone {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+
+	.left {
+		width: 50%;
+		padding: 1rem;
+
+		@include tablet {
+			width: 60%;
+		}
+
+		@include phone {
+			width: 100%;
+		}
+
+		.leftCentent {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			padding: 1rem;
+			width: 100%;
+			height: 100%;
+
+			img {
+				width: 100%;
+				// object-fit: cover;
+			}
+
+			@include tablet {
+				width: 100% !important;
+				height: 100%;
+				overflow: hidden;
+			}
+		}
+	}
+
+	.right {
+		width: 50%;
+		padding: 2rem;
+		margin-left: 5rem;
+		height: auto;
+		display: flex;
+		gap: 30px;
+		flex-direction: column;
+
+		@include tablet {
+			// background-color: crimson;
+		}
+
+		@include phone {
+			width: 100%;
+			margin-left: 1rem;
+		}
+
+		.textTitle {
+			width: 50%;
+			font-family: 'Roboto', sans-serif;
+			font-size: 25px !important;
+
+			@include tablet {
+				font-size: 13px !important;
+				width: 100%;
+			}
+
+			@include phone {
+				width: 100%;
+				font-size: 12px;
+			}
+
+
+		}
+
+		.textCenter {
+			display: flex;
+			gap: 20px;
+			flex-direction: column;
+			font-size: 19px !important;
+
+			@include tablet {
+				display: flex;
+				gap: 10px;
+				flex-direction: column;
+				font-size: 12px;
+			}
+
+			.reting {
+				display: flex;
+				gap: 10px;
+				flex-direction: column;
+				font-family: 'Roboto', sans-serif;
+
+				span {
+					font-family: 'Roboto', sans-serif;
+
+					@include tablet {
+						font-size: 12px;
+					}
+				}
+
+				.startIcons {
+
+					i {
+						color: rgb(232, 239, 44);
+					}
+				}
+			}
+
+			.textDesc {
+				width: 24rem;
+				padding: 0.4rem;
+
+				@include phone {
+					width: 100%;
+				}
+
+				@include tablet {
+					width: 100%;
+				}
+
+				span {
+					color: #808080;
+					font-size: 20px;
+					font-weight: 200;
+
+					@include phone {
+						font-size: 10px;
+					}
+
+					@include tablet {
+						font-size: 12px !important;
+
+					}
+				}
+			}
+		}
+
+		.bottomSlide {
+			display: flex;
+
+			@include tablet {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-top: -1rem;
+			}
+
+			.bottomSlideleft {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+
+				@include tablet {
+					width: 100% !important;
+					overflow: hidden;
+					display: flex;
+					gap: 5px;
+				}
+
+				img {
+					@include tablet {
+						width: 4rem;
+						height: 3rem;
+						object-fit: fill;
+					}
+				}
+
+				.textElment {
+					@include tablet {
+						display: flex;
+						justify-content: center;
+						flex-direction: column;
+					}
+
+					h2 {
+						font-family: 'Roboto', sans-serif;
+						font-size: 13px;
+
+						@include phone {
+							font-size: 9px;
+						}
+
+						@include tablet {
+							font-size: 10px;
+						}
+					}
+
+					span {
+						font-family: 'Roboto', sans-serif;
+						font-size: 13px !important;
+						color: #808080;
+					}
+				}
+			}
+
+			.bottomSlideright {
+				display: flex;
+				flex-direction: row;
+
+				@include tablet {
+					gap: 10px;
+				}
+
+
+
+				i {
+					background-color: #e2e0e0;
+					padding: 0.3rem;
+					height: 1rem;
+					width: 1rem;
+					border-radius: 50%;
+					font-size: 12px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					cursor: pointer;
+
+					@include tablet {
+						font-size: 9px;
+						display: flex;
+						width: 0.8rem;
+						height: 0.8rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+// footer style
+
+.footer {
+	background-color: lightgray;
+	padding: 2rem;
+
+	@include tablet {
+		// background-color: #333f7f;
+		padding: 0.5rem;
+	}
+
+	@include phone {
+		padding: 0.3rem;
+	}
+
+
+
+	.copyRight {
+		font-family: 'Roboto', sans-serif;
+		font-size: 17px;
+		color: #808080;
+		text-align: center;
+		margin-top: 2rem;
+
+		@include phone {
+			font-size: 9px;
+		}
+	}
+
+
+	.items {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 10px;
+
+		@include phone {
+			display: flex;
+			width: 100%;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+
+		.item1 {
+			display: flex;
+			width: 25%;
+			flex-direction: column;
+			gap: 10px;
+
+			@include phone {
+				display: flex;
+				width: 100%;
+
+
+			}
+
+			span {
+				font-family: 'Roboto', sans-serif;
+				font-size: 17px;
+				color: #808080;
+
+				@include tablet {
+					font-size: 13px !important;
+				}
+
+				@include phone {
+					font-size: 9px;
+				}
+			}
+
+			img {
+				width: 6rem;
+
+				@include phone {
+					width: 4rem;
+				}
+			}
+		}
+
+		.item2 {
+			width: 25%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			gap: 20px;
+			font-family: 'Roboto', sans-serif;
+
+
+
+			@include phone {
+				width: 100%;
+				display: flex !important;
+			}
+
+			h2 {
+				font-size: 15px;
+
+				@include tablet {
+					font-size: 13px !important;
+				}
+
+				@include phone {
+					margin-top: 1.3rem;
+					font-size: 10px;
+				}
+			}
+
+			ul {
+				list-style: none;
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+
+				li {
+					font-family: 'Roboto', sans-serif;
+					font-size: 17px;
+					color: #808080;
+
+					@include tablet {
+						font-size: 13px !important;
+					}
+
+					@include phone {
+						font-size: 9px;
+					}
+				}
+			}
+
+		}
+
+		.item3 {
+			width: 25%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			gap: 20px;
+			font-family: 'Roboto', sans-serif;
+
+			@include phone {
+				width: 100%;
+			}
+
+			h2 {
+				font-size: 15px;
+
+				@include tablet {
+					font-size: 13px !important;
+				}
+
+				@include phone {
+					font-size: 10px;
+				}
+			}
+
+			ul {
+				list-style: none;
+				display: flex;
+				// align-items: center;
+				flex-direction: column;
+				gap: 10px;
+
+				li {
+					font-family: 'Roboto', sans-serif;
+					font-size: 17px;
+					color: #808080;
+
+					@include tablet {
+						font-size: 11px !important;
+					}
+
+					@include phone {
+						font-size: 8px;
+						width: 100%;
+					}
+				}
+			}
+		}
+
+		.item4 {
+			width: 25%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			gap: 20px;
+			font-family: 'Roboto', sans-serif;
+
+			@include phone {
+				width: 100%;
+			}
+
+			h2 {
+				font-size: 15px;
+
+				@include tablet {
+					font-size: 13px !important;
+				}
+
+				@include phone {
+					font-size: 10px;
+				}
+			}
+
+			span {
+				font-family: 'Roboto', sans-serif;
+				font-size: 13px;
+				color: #808080;
+
+				@include tablet {
+					font-size: 13px !important;
+				}
+
+				@include phone {
+					font-size: 9px;
+				}
+			}
+		}
+	}
 }
