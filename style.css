@@ -22,6 +22,7 @@
 .topheader {
   background: url("./assets/div.hero-center.png") 50% 50% no-repeat;
   background-size: cover;
+  height: 76vh;
 }
 @media screen and (min-width: 280px) and (max-width: 481px) {
   .topheader {
@@ -76,7 +77,7 @@
 }
 .topheader .navbar .left .centerElement span {
   cursor: pointer;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 400;
 }
 @media screen and (min-width: 280px) and (max-width: 481px) {
@@ -176,13 +177,13 @@
 .topheader .header .left h1 {
   font-style: normal;
   font-family: "Lora";
-  font-weight: 700;
-  font-size: 65px;
-  line-height: 83px;
+  font-weight: 800;
+  font-size: 73px !important;
+  line-height: 90px;
   color: #1D1D1D;
   overflow: hidden;
   width: 503px;
-  height: 249px;
+  height: 264px;
 }
 @media screen and (min-width: 482px) and (max-width: 768px) {
   .topheader .header .left h1 {
@@ -241,8 +242,8 @@
   }
 }
 .topheader .header .right img {
-  width: 90%;
-  height: 100%;
+  width: 97% !important;
+  height: 100% !important;
 }
 @media screen and (min-width: 482px) and (max-width: 768px) {
   .topheader .header .right img {

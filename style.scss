@@ -26,6 +26,7 @@ body {}
 .topheader {
 	background: url('./assets/div.hero-center.png') 50% 50% no-repeat;
 	background-size: cover;
+	height: 76vh;
 
 	@include phone {
 		background: url('./assets/div.hero-center.png') 100% 100% no-repeat;
@@ -86,7 +87,7 @@ body {}
 
 				span {
 					cursor: pointer;
-					font-size: 18px;
+					font-size: 22px;
 					font-weight: 400;
 
 					@include phone {
@@ -202,13 +203,13 @@ body {}
 			h1 {
 				font-style: normal;
 				font-family: 'Lora';
-				font-weight: 700;
-				font-size: 65px;
-				line-height: 83px;
+				font-weight: 800;
+				font-size: 73px !important;
+				line-height: 90px;
 				color: #1D1D1D;
 				overflow: hidden;
 				width: 503px;
-				height: 249px;
+				height: 264px;
 
 				@include tablet {
 					font-size: 30px;
@@ -273,8 +274,8 @@ body {}
 			@include tablet {}
 
 			img {
-				width: 90%;
-				height: 100%;
+				width: 97% !important;
+				height: 100% !important;
 
 				@include tablet {
 					width: 23rem;
