@@ -33,80 +33,69 @@
 }
 .topheader .navbar {
   display: flex;
-  justify-content: space-around;
-  padding: 1rem;
   align-items: center;
+  justify-content: center;
+  padding: 1rem;
 }
-@media screen and (min-width: 280px) and (max-width: 481px) {
-  .topheader .navbar {
-    width: 100%;
-  }
-}
-.topheader .navbar .left {
+.topheader .navbar .navbarCentent {
+  width: 80%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+.topheader .navbar .navbarCentent .left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 30px;
 }
-@media screen and (min-width: 280px) and (max-width: 481px) {
-  .topheader .navbar .left .lego {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-.topheader .navbar .left .lego img {
-  cursor: pointer;
-}
-@media screen and (min-width: 280px) and (max-width: 481px) {
-  .topheader .navbar .left .lego img {
-    width: 3rem;
-  }
-}
-.topheader .navbar .left .centerElement {
+.topheader .navbar .navbarCentent .left .centerElement {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 40px;
+  margin-left: 1rem;
+}
+.topheader .navbar .navbarCentent .left .centerElement span {
   font-family: "Inter";
-}
-@media screen and (min-width: 280px) and (max-width: 481px) {
-  .topheader .navbar .left .centerElement {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
-}
-.topheader .navbar .left .centerElement span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
   cursor: pointer;
-  font-size: 22px;
-  font-weight: 400;
+  color: #000000;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.07);
 }
-@media screen and (min-width: 280px) and (max-width: 481px) {
-  .topheader .navbar .left .centerElement span {
-    font-size: 8px;
-  }
-}
-.topheader .navbar .right {
+.topheader .navbar .navbarCentent .right {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 @media screen and (min-width: 280px) and (max-width: 481px) {
-  .topheader .navbar .right {
+  .topheader .navbar .navbarCentent .right {
     display: flex;
     margin-right: 1.6rem;
   }
 }
-.topheader .navbar .right .loginbtn button {
-  border: none;
+.topheader .navbar .navbarCentent .right .loginbtn button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12.9047px 32.2618px;
+  gap: 8.07px;
+  width: 103px;
+  height: 48px;
+  color: #FFFFFF;
   background: #013665;
-  border-radius: 5px;
+  border-radius: 6px;
+  border: none;
   cursor: pointer;
-  color: #fff;
-  font-weight: 700;
-  padding: 0.5rem;
 }
 @media screen and (min-width: 280px) and (max-width: 481px) {
-  .topheader .navbar .right .loginbtn button {
+  .topheader .navbar .navbarCentent .right .loginbtn button {
     font-weight: 200;
     font-size: 7px;
     display: flex;
@@ -114,20 +103,22 @@
     justify-content: center;
   }
 }
-.topheader .navbar .right .signupbtn button {
-  padding: 0.5rem;
-  width: 9rem;
-  border-radius: 5px;
-  border: 1px solid #111;
+.topheader .navbar .navbarCentent .right .signupbtn button {
+  box-sizing: border-box;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  gap: 10px;
+  align-items: center;
+  padding: 12.9047px 19.3571px;
+  gap: 8.07px;
   cursor: pointer;
-  font-weight: bold;
+  width: 183px;
+  height: 48px;
+  border: 1px solid #013665;
+  border-radius: 6px;
 }
 @media screen and (min-width: 280px) and (max-width: 481px) {
-  .topheader .navbar .right .signupbtn button {
+  .topheader .navbar .navbarCentent .right .signupbtn button {
     width: 4rem;
     font-weight: 200;
     font-size: 7px;
@@ -136,11 +127,11 @@
     justify-content: center;
   }
 }
-.topheader .navbar .right .signupbtn button i {
+.topheader .navbar .navbarCentent .right .signupbtn button i {
   font-size: 10px;
 }
 @media screen and (min-width: 280px) and (max-width: 481px) {
-  .topheader .navbar .right .signupbtn button i {
+  .topheader .navbar .navbarCentent .right .signupbtn button i {
     font-size: 7px;
   }
 }
@@ -182,7 +173,7 @@
   line-height: 90px;
   color: #1D1D1D;
   overflow: hidden;
-  width: 503px;
+  width: 550px;
   height: 264px;
 }
 @media screen and (min-width: 482px) and (max-width: 768px) {
@@ -200,10 +191,10 @@
   color: rgb(41, 97, 181);
 }
 .topheader .header .left span {
-  font-family: "Gill Sans", sans-serif;
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 33px;
   color: rgba(0, 0, 0, 0.6);
   width: 375px;
