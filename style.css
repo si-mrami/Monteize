@@ -753,7 +753,7 @@ body {
   font-weight: 400;
   font-size: 23px;
   line-height: 32px;
-  color: #FFFFFF;
+  list-style: inside;
   color: #FFFFFF;
 }
 .version-3-4u1 .auto-group-mj2t-eiX .solution {
@@ -808,6 +808,7 @@ body {
   gap: 5px;
 }
 .version-3-4u1 .auto-group-mj2t-eiX .solution .centent .left ul li {
+  list-style: inside;
   height: 65px;
   overflow: hidden;
   font-family: "Inter";
@@ -827,59 +828,6 @@ body {
   justify-content: center;
   width: 100%;
   height: 100%;
-}
-.version-3-4u1 .auto-group-mj2t-eiX .revenue {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh !important;
-  margin-top: 3rem;
-}
-.version-3-4u1 .auto-group-mj2t-eiX .revenue .revenueCentent {
-  width: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem;
-}
-.version-3-4u1 .auto-group-mj2t-eiX .revenue .revenueCentent .left h2 {
-  width: 447px;
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  flex-direction: column;
-  height: 108px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 36.875px;
-  line-height: 45px;
-  color: #1D1D1D;
-}
-.version-3-4u1 .auto-group-mj2t-eiX .revenue .revenueCentent .left h2 span {
-  color: #013665;
-}
-.version-3-4u1 .auto-group-mj2t-eiX .revenue .revenueCentent .left .revenuetext {
-  margin-top: 1rem;
-  width: 470px;
-  overflow: hidden;
-  padding: 0.5rem;
-}
-.version-3-4u1 .auto-group-mj2t-eiX .revenue .revenueCentent .left .revenuetext span {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px !important;
-  line-height: 24px;
-  color: rgba(0, 0, 0, 0.6);
-}
-.version-3-4u1 .auto-group-mj2t-eiX .revenue .revenueCentent .right {
-  width: 50%;
-}
-.version-3-4u1 .auto-group-mj2t-eiX .revenue .revenueCentent .right .rightCentent img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .version-3-4u1 .auto-group-mj2t-eiX .main-uTR {
   background-color: #013665;
@@ -1007,6 +955,59 @@ body {
   vertical-align: top;
   flex-shrink: 0;
 }
+.version-3-4u1 .revenue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 12rem;
+}
+.version-3-4u1 .revenue .revenueCentent {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.version-3-4u1 .revenue .revenueCentent .left h2 {
+  width: 447px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex-direction: column;
+  height: 108px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36.875px;
+  line-height: 45px;
+  color: #1D1D1D;
+}
+.version-3-4u1 .revenue .revenueCentent .left h2 span {
+  color: #013665;
+}
+.version-3-4u1 .revenue .revenueCentent .left .revenuetext {
+  margin-top: 1rem;
+  width: 470px;
+  overflow: hidden;
+  padding: 0.5rem;
+}
+.version-3-4u1 .revenue .revenueCentent .left .revenuetext span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px !important;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.version-3-4u1 .revenue .revenueCentent .right {
+  width: 50%;
+}
+.version-3-4u1 .revenue .revenueCentent .right .rightCentent img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .version-3-4u1 .frame-1000005866-te7 {
   align-items: flex-start;
   flex-shrink: 0;
@@ -1059,115 +1060,6 @@ body {
   object-fit: cover;
   vertical-align: top;
   flex-shrink: 0;
-}
-.version-3-4u1 .divrow-PWK {
-  flex-shrink: 0;
-  box-sizing: border-box;
-  padding: 6.4rem 12rem 6.9rem 12rem;
-  width: 100%;
-  height: 29rem;
-  overflow: hidden;
-  position: relative;
-  background-color: #eef0f6;
-}
-.version-3-4u1 .divrow-PWK .divinner-wrap-8D1 {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-.version-3-4u1 .divrow-PWK .divinner-wrap-8D1 .auto-group-akth-GKD {
-  box-sizing: border-box;
-  padding: 6.1rem 2.4rem 5.6rem 0rem;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-}
-.version-3-4u1 .divrow-PWK .divinner-wrap-8D1 .auto-group-akth-GKD .logopartnerscriteosvg-zW7 {
-  margin-right: 2.4rem;
-  width: 18rem;
-  height: 4rem;
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
-}
-.version-3-4u1 .divrow-PWK .divinner-wrap-8D1 .auto-group-akth-GKD .logopartnersaarkisvg-KYP {
-  vertical-align: top;
-  flex-shrink: 0;
-  width: 18rem;
-  height: 4rem;
-  object-fit: contain;
-}
-.version-3-4u1 .divrow-PWK .divinner-wrap-8D1 .auto-group-j6aw-TuV {
-  margin-right: 2.4rem;
-  width: 38.4rem;
-  height: 100%;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-.version-3-4u1 .divrow-PWK .divinner-wrap-8D1 .auto-group-j6aw-TuV .demand-side-partnersinclude-oCf {
-  flex-shrink: 0;
-  align-items: center;
-  font-size: 1.4rem;
-  letter-spacing: 0.1rem;
-  color: #161616;
-  font-family: Poppins, "Source Sans Pro";
-  white-space: nowrap;
-  margin: 0rem 0rem 4rem 0.004rem;
-  display: flex;
-  justify-content: center;
-  font-weight: 800;
-  line-height: 1.5;
-  text-transform: uppercase;
-}
-.version-3-4u1 .divrow-PWK .divinner-wrap-8D1 .auto-group-j6aw-TuV .auto-group-z2ub-gXM {
-  margin-bottom: 4.55rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-}
-.version-3-4u1 .divrow-PWK .divinner-wrap-8D1 .auto-group-j6aw-TuV .auto-group-z2ub-gXM .logopartnersthetradedeskgraysvg-dhV {
-  margin: 0rem 2.4rem 0.001rem 0rem;
-  width: 18rem;
-  height: 2.309rem;
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
-}
-.version-3-4u1 .divrow-PWK .divinner-wrap-8D1 .auto-group-j6aw-TuV .auto-group-z2ub-gXM .logopartnerslinkedinsvg-wCP {
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
-  width: 18rem;
-  height: 4rem;
-}
-.version-3-4u1 .divrow-PWK .divinner-wrap-8D1 .auto-group-j6aw-TuV .link-TgX {
-  vertical-align: top;
-  flex-shrink: 0;
-  margin-left: 8.9602rem;
-  width: 1.4rem;
-  height: 1.05rem;
-  object-fit: contain;
-}
-.version-3-4u1 .divrow-PWK .divinner-wrap-8D1 .logopartnersmolocosvg-zwM {
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
-  margin: 0.5rem 2.4rem 0rem 0rem;
-  width: 18rem;
-  height: 4rem;
-}
-.version-3-4u1 .divrow-PWK .divinner-wrap-8D1 .logopartnerspanglesvg-8Gs {
-  width: 18rem;
-  height: 4rem;
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
-  margin-top: 0.5rem;
 }
 .version-3-4u1 .auto-group-n58f-Ta3 {
   row-gap: 10rem;
