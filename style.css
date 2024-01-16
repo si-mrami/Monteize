@@ -1,6 +1,11 @@
 html {
   font-size: 62.5%;
 }
+@media screen and (min-width: 280px) and (max-width: 481px) {
+  html {
+    font-size: 20%;
+  }
+}
 
 * {
   margin: 0;
@@ -55,6 +60,16 @@ body {
   align-items: flex-start;
   width: 100%;
   justify-content: space-between;
+}
+@media screen and (min-width: 280px) and (max-width: 481px) {
+  .version-3-4u1 .auto-group-bxv3-acT .divhero-center-wrapper-vRR .frame-1000005873-2UT {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    height: 50%;
+    margin-top: 15rem;
+    width: 100%;
+  }
 }
 .version-3-4u1 .auto-group-bxv3-acT .divhero-center-wrapper-vRR .frame-1000005873-2UT .frame-1000005872-P47 {
   margin-right: 4.9rem;
@@ -115,12 +130,27 @@ body {
   font-family: Poppins, "Source Sans Pro";
   align-items: center;
   background-color: #013665;
+  cursor: pointer;
 }
 .version-3-4u1 .auto-group-bxv3-acT .divhero-center-wrapper-vRR .frame-1000005873-2UT .group-213-eRH {
   width: 70rem;
   height: 35.9rem;
   position: relative;
   flex-shrink: 0;
+}
+@media screen and (min-width: 280px) and (max-width: 481px) {
+  .version-3-4u1 .auto-group-bxv3-acT .divhero-center-wrapper-vRR .frame-1000005873-2UT .group-213-eRH {
+    background-color: #0a82ff;
+    margin-top: 2rem !important;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 481px) {
+  .version-3-4u1 .auto-group-bxv3-acT .divhero-center-wrapper-vRR .frame-1000005873-2UT .group-213-eRH img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .version-3-4u1 .auto-group-bxv3-acT .divhero-center-wrapper-vRR .frame-1000005873-2UT .group-213-eRH .image-o3H {
   background-size: 100% 100%;
@@ -396,6 +426,7 @@ body {
   margin-right: 1.9357rem;
   align-items: center;
   font-weight: 500;
+  cursor: pointer;
 }
 .version-3-4u1 .auto-group-bxv3-acT .nav-VpX .btn-3Wb .btn-free-trial-Hvj {
   border: solid 0.1rem #013665;
@@ -417,6 +448,7 @@ body {
   font-family: Poppins, "Source Sans Pro";
   white-space: nowrap;
   margin-right: 0.8066rem;
+  cursor: pointer;
 }
 .version-3-4u1 .auto-group-bxv3-acT .nav-VpX .btn-3Wb .btn-free-trial-Hvj .icon-ZdM {
   height: 0.8rem;
@@ -1007,6 +1039,45 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.version-3-4u1 .row {
+  background-color: #eef0f6;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 27vh;
+  margin-top: 2rem;
+}
+.version-3-4u1 .row .rowCentent {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.version-3-4u1 .row .rowCentent h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #161616;
+}
+.version-3-4u1 .row .rowCentent .images {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.version-3-4u1 .row .rowCentent .images img {
+  width: 16rem;
+  cursor: pointer;
 }
 .version-3-4u1 .frame-1000005866-te7 {
   align-items: flex-start;

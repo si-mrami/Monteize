@@ -1,5 +1,13 @@
+@import "./media_query";
+
+
 html {
 	font-size: 62.5%;
+
+	@include phone {
+		font-size: 20%;
+
+	}
 }
 
 * {
@@ -36,6 +44,8 @@ body {
 		position: relative;
 		flex-shrink: 0;
 
+
+
 		.divhero-center-wrapper-vRR {
 			top: 0;
 			box-sizing: border-box;
@@ -51,6 +61,8 @@ body {
 			background-position: 0 -14.2875rem;
 			background-image: url('./assets/div.hero-center.png');
 
+
+
 			.frame-1000005873-2UT {
 				height: 100%;
 				display: flex;
@@ -58,11 +70,24 @@ body {
 				width: 100%;
 				justify-content: space-between;
 
+				@include phone {
+					display: flex;
+					align-items: center;
+					flex-direction: column-reverse;
+					height: 50%;
+					margin-top: 15rem;
+					width: 100%;
+				}
+
+
+
 				.frame-1000005872-P47 {
 					margin-right: 4.9rem;
 					width: 49.4rem;
 					height: 100%;
 					flex-shrink: 0;
+
+
 
 					.frame-1000005871-vZq {
 						margin-bottom: 3.2rem;
@@ -122,6 +147,8 @@ body {
 						font-family: Poppins, 'Source Sans Pro';
 						align-items: center;
 						background-color: #013665;
+						cursor: pointer;
+
 					}
 				}
 
@@ -130,6 +157,21 @@ body {
 					height: 35.9rem;
 					position: relative;
 					flex-shrink: 0;
+
+					@include phone {
+						background-color: #0a82ff;
+						// height: 100%;
+						margin-top: 2rem !important;
+					}
+
+					img {
+						@include phone {
+							width: 100%;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+						}
+					}
 
 					.image-o3H {
 						background-size: 100% 100%;
@@ -437,6 +479,7 @@ body {
 					margin-right: 1.9357rem;
 					align-items: center;
 					font-weight: 500;
+					cursor: pointer;
 				}
 
 				.btn-free-trial-Hvj {
@@ -459,6 +502,7 @@ body {
 						font-family: Poppins, 'Source Sans Pro';
 						white-space: nowrap;
 						margin-right: 0.8066rem;
+						cursor: pointer;
 					}
 
 					.icon-ZdM {
@@ -1154,10 +1198,55 @@ body {
 				}
 			}
 		}
-		// background-color: #eef0f6;
+
 	}
 
+	.row {
+		background-color: #eef0f6;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 27vh;
+		margin-top: 2rem;
 
+		.rowCentent {
+			width: 95%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			flex-direction: column;
+
+			h2 {
+				font-family: 'Poppins';
+				font-style: normal;
+				font-weight: 800;
+				font-size: 14px;
+				line-height: 21px;
+				display: flex;
+				align-items: center;
+				text-align: center;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+
+				color: #161616;
+
+
+			}
+
+			.images {
+				display: flex;
+				gap: 20px;
+				align-items: center;
+
+				img {
+					width: 16rem;
+					cursor: pointer;
+				}
+			}
+		}
+	}
 
 	.frame-1000005866-te7 {
 		align-items: flex-start;
